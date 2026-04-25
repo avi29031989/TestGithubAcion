@@ -1,1 +1,16 @@
+name: Test CI
 
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Print message
+      run: echo "Hello Avinash 🚀"
+
+    - name: Check dotnet version
+      run: dotnet --version
